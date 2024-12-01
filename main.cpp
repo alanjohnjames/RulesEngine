@@ -1,8 +1,9 @@
 #include "rules_engine.hpp"
 #include <iostream>
 
-int main() {
-    RuleEngine engine;
+int main()
+{
+    RulesEngine engine;
 
     // Add some rules
     engine.addRule([]() { return 5 > 3; });

@@ -1,11 +1,12 @@
 #include "rules_engine.hpp"
 #include <iostream>
 
-void RuleEngine::addRule(Rule rule) {
+void RulesEngine::addRule(Rule rule)
+{
     rules.push_back(rule);
 }
 
-void RuleEngine::executeRules() {
+void RulesEngine::executeRules() {
     for (const auto& rule : rules) {
         if (rule()) {
             std::cout << "Rule passed!" << std::endl;

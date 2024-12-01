@@ -1,10 +1,11 @@
 
 #pragma once
 
-#include <vector>
 #include <functional>
+#include <vector>
 
-class RuleEngine {
+class RulesEngine
+{
 public:
     using Rule = std::function<bool()>;
 
