@@ -1,10 +1,13 @@
 #include <string>
 
-struct Bond {
-    std::string issuer;
-    std::string parentCompany;
-    std::string issuerCountry;
-    std::string parentCompanyRating;
-    std::string issuerRating;
+struct Bond
+{
     std::string bondRating;
+
+    std::string issuer;
+    std::string issuerCountry;
+    std::string issuerRating;
+
+    std::string parentCompany;
+    std::string parentCompanyRating;
 };
