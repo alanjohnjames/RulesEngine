@@ -1,0 +1,30 @@
+# Ignore build directory
+build/
+
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore CMake generated files
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+CMakeTmp/
+cmake_install.cmake
+Makefile
+CMakeLists.txt.user
+
+# Ignore compiled object files and libraries
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.lib
+*.a
+
+# Ignore precompiled headers
+*.gch
+*.pch
+
+# Ignore generated executables
+rules_engine
