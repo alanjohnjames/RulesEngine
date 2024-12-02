@@ -4,14 +4,14 @@
 #include <functional>
 #include <vector>
 
-class RulesEngine
+class BasicRulesEngine
 {
 public:
-    using Rule = std::function<bool()>;
+    using BasicRule = std::function<bool()>;
 
-    void addRule(Rule rule);
+    void addRule(BasicRule rule);
     void executeRules();
 
 private:
-    std::vector<Rule> rules;
+    std::vector<BasicRule> rules;
 };
