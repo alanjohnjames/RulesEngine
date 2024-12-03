@@ -1,5 +1,6 @@
-#include "rules_engine.hpp"
 #include <iostream>
+
+#include "rules_engine.hpp"
 
 int main()
 {

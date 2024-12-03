@@ -28,3 +28,4 @@ CMakeLists.txt.user
 
 # Ignore generated executables
 rules_engine
+test_catch2

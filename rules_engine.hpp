@@ -7,11 +7,13 @@
 class BasicRulesEngine
 {
 public:
-    using BasicRule = std::function<bool()>;
+    using Rule = std::function<bool()>;
 
-    void addRule(BasicRule rule);
+    void addRule(Rule rule);
     void executeRules();
 
+    auto getRules() const { return rules; }
+
 private:
-    std::vector<BasicRule> rules;
+    std::vector<Rule> rules;
 };

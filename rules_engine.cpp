@@ -1,7 +1,8 @@
-#include "rules_engine.hpp"
 #include <iostream>
 
-void BasicRulesEngine::addRule(BasicRule rule)
+#include "rules_engine.hpp"
+
+void BasicRulesEngine::addRule(Rule rule)
 {
     rules.push_back(rule);
 }
@@ -12,11 +13,11 @@ void BasicRulesEngine::executeRules()
     {
         if (rule())
         {
-            std::cout << "BasicRule passed!" << std::endl;
+            std::cout << "Rule passed!" << std::endl;
         }
         else
         {
-            std::cout << "BasicRule failed!" << std::endl;
+            std::cout << "Rule failed!" << std::endl;
         }
     }
 }
